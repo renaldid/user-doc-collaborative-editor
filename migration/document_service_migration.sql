@@ -1,0 +1,7 @@
+USE collaborative_db;
+
+CREATE TABLE IF NOT EXISTS documents (
+    id VARCHAR(255) PRIMARY KEY,
+    content TEXT NOT NULL,
+    last_modified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    );
